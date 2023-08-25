@@ -1,10 +1,13 @@
-.custom-img-class{
-  border-radius:50%;
-
-  Height: 60px ! important;
-  margin-top:10px;
-  
+body {
+  background-color: #ebebe0 !important;
 }
-.custom-card{
-  Height: 80px ! important;
+.custom-img-class {
+  border-radius: 50%;
+  height: 60px !important;
+  margin-top: 10px;
+}
+.custom-card {
+  height: 80px !important;
+  border: 2px solid gray !important;
+  background-color:#f5f5ef !important;
 }
