@@ -75,20 +75,6 @@ function App() {
                 </div>
               </div>
 
-              {/* <div className='d-flex justify-content-center ' key={id}>
-                <div className="card custom-card w-50  mt-5 shadow">
-                  <div className="row">
-                    <div className="col col-md-6">
-                      <img src={avatar} className="custom-img-class h-40 mt-3 ms-5" alt="..." />
-                    </div>
-                    <div className="col col-md-6 mt-4">
-                      <h5 className="car fw-bold">{name}</h5>
-                      <p className="card-text fw-bold ">{id}</p>
-                      <p className="card-text ">{createdAt}</p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </>
 
           )
