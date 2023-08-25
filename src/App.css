@@ -1,7 +1,10 @@
 .custom-img-class{
   border-radius:50%;
+
+  Height: 60px ! important;
+  margin-top:10px;
   
 }
 .custom-card{
-  Height:100px;
+  Height: 80px ! important;
 }

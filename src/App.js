@@ -36,7 +36,7 @@ function App() {
 
             </ul>
             <form className="d-flex" role="search">
-              <input className="form-control me-5 " type="search" placeholder="Search Users" aria-label="Search"  value={searchText}  onChange={e => setSearchText(e.target.value)} />
+              <input className="form-control me-5 " type="search" placeholder="Search Users" aria-label="Search" value={searchText} onChange={e => setSearchText(e.target.value)} />
             </form>
           </div>
         </div>
@@ -48,20 +48,49 @@ function App() {
           const { id, name, avatar, createdAt } = user;
 
           return (
-            <div className='d-flex justify-content-center ' key={id}>
-              <div className="card custom-card w-50  mt-5 shadow">
-                <div className="row">
-                  <div className="col col-md-6">
-                    <img src={avatar} className="custom-img-class h-75 mt-3 ms-5" alt="..." />
+            <>
+              <div className='d-flex justify-content-center '>
+                <div className="container w-75 card mt-3 shadow custom-card ">
+                  <div className="row">
+                    <div className="col col-md-6">
+                      <div className="container ">
+                        <img src={avatar} className=" custom-img-class d-flex mx-auto" alt="..." />
+
+                      </div>
+
+                    </div>
+
+                    <div className="col col-md-6">
+                      <div className="container p-1">
+                        <div className=" d-flex gap-3 align-item-center text-center">
+                          <p className="card-text fw-bold ">{id}</p>
+                          <h5 className="car fw-bold">{name}</h5>
+                        </div>
+                        <p className="card-text ">{createdAt}</p>
+                      </div>
+
+                    </div>
                   </div>
-                  <div className="col col-md-6 mt-4">
-                    <h5 className="car fw-bold">{name}</h5>
-                    <p className="card-text fw-bold ">{id}</p>
-                    <p className="card-text ">{createdAt}</p>
-                  </div>
+
                 </div>
               </div>
-            </div>
+
+              {/* <div className='d-flex justify-content-center ' key={id}>
+                <div className="card custom-card w-50  mt-5 shadow">
+                  <div className="row">
+                    <div className="col col-md-6">
+                      <img src={avatar} className="custom-img-class h-40 mt-3 ms-5" alt="..." />
+                    </div>
+                    <div className="col col-md-6 mt-4">
+                      <h5 className="car fw-bold">{name}</h5>
+                      <p className="card-text fw-bold ">{id}</p>
+                      <p className="card-text ">{createdAt}</p>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
+            </>
+
           )
         })}
       </div>
